@@ -29,6 +29,12 @@ header {
   padding: 2em 1.5em;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 @media screen and (min-width: 800px) {
   header {
     padding: 1em;
@@ -91,9 +97,51 @@ main {
   padding: 2em 1em;
   margin-bottom: 1.5em;
 }
+
+main img{
+  float: left;
+}
+
+.clear{
+  clear: left;
+}
+
+.sottolineatura{
+  overflow: auto;
+}
+
+.sottolineatura h1{
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  z-index: 1;
+}
+
+.sottolineatura img{
+  position: relative;
+  top: -8px;
+  width: 100%;
+}
+
+
+  
+
 @media screen and (min-width: 700px) {
   main {
     padding: 2em;
+  }
+  .sottolineatura img{
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1068px) {
+  main {
+    padding: 2em;
+  }
+  .sottolineatura img{
+    width: 500px;
+    left: 450px;
   }
 }
 
